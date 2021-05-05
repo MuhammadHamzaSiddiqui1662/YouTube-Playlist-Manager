@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Video Streaming App</title>
+</head>
+<body>
+    <div class="mobile-search">
+        <div class="search-form">
+            <label for="title-input-mobile" class="title-input-label mobile">Video Title:</label>
+            <input id="title-input-mobile" class="title-input mobile" type="text" placeholder="Give A Nice Title">
+            <label for="url-input-mobile" class="url-input-label mobile">Video URL:</label>
+            <input id="url-input-mobile" class="url-input mobile" type="search" placeholder="Let me find for you">
+            <button id="add-button-mobile" class="add-button mobile">Add</button>
+        </div>
+    </div>
+    <header class="my-flex main-header">
+        <div class="my-flex head-left">
+            <h1 class="label">Streamer</h1>
+        </div>
+        <div class="my-flex head-right">
+            <i class="fas fa-search"></i>
+            <label for="title-input" class="title-input-label">Video Title:</label>
+            <input id="title-input" class="title-input" type="text" placeholder="Give A Nice Title">
+            <label for="url-input" class="url-input-label">Video URL:</label>
+            <input id="url-input" class="url-input" type="search" placeholder="Let me find for you">
+            <button id="add-button" class="add-button">Add</button>
+        </div>
+    </header>
+    <div class="container my-flex">
+        <div class="video-area">
+            <iframe id="main-video" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="collection">
+            <h1>My Collection</h1>
+            <ul id="play-list"></ul>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="./app.js"></script>
+</body>
+</html>
